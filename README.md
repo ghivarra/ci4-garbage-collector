@@ -7,7 +7,7 @@ If you don't know what cron is, kindly see this page https://wikipedia.org/wiki/
 # How to use
 1. Copy Garbage.php files inside your controllers path usually in **/projectPath/app/Controllers/**
 2. Edit **$pass** inside it with your own token
-3. Create cronjob to run the script, you can use either PHP CLI or just casual wget for it e.g __ 0 */6 * * * wget -O /dev/null https://yourdomain.com/garbage/delete?token=YOUR_OWN_TOKEN __
+3. Create cronjob to run the script, you can use either PHP CLI or just casual wget for it e.g **"0 */6 * * * wget -O /dev/null https://yourdomain.com/garbage/delete?token=YOUR_OWN_TOKEN"**
 
 # DONE!
 your expired session will be deleted every 6 hours. 
