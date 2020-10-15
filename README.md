@@ -12,7 +12,7 @@ If you don't know what cron is, kindly see this page https://wikipedia.org/wiki/
 > 0 */6 * * * wget -O /dev/null https://yourdomain.com/garbage/delete?token=YOUR_OWN_TOKEN
 
 # DONE!
-your expired session will be deleted every 6 hours. 
+your expired session will be deleted every 6 hours or even every minutes if you wanted to
 
 # TRIVIA
 Stop bullying the garbage collector, maybe the payment is just not good enough!
