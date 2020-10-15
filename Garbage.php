@@ -1,9 +1,9 @@
 <?php namespace App\Controllers;
 
 /**
- * CodeIgniter Manual Garbage Collector Cron
+ * CodeIgniter Manual Garbage Collector
  *
- * Created with love and proud by Ghivarra Senandika Rushdie
+ * Created with love by Ghivarra Senandika Rushdie
  *
  * @package CodeIgniter 4
  *
@@ -22,7 +22,7 @@ class Garbage extends Controller
         $pass = 'YOUR_CRON_TOKEN';
 
         $request = \Config\Services::request();
-        $token   = $request->get('token');
+        $token   = $request->getGet('token');
 
         if(!isset($token) OR $token !== $pass)
         {
