@@ -5,8 +5,12 @@ It happens for me too as I was surprised to see millions of expired sessions in 
 If you don't know what cron is, kindly see this page https://wikipedia.org/wiki/Cron
 
 # How to use
-1. Copy Garbage.php files inside your controllers path e.g. /projectPath/app/Controllers/
-2. Run cronjob for it, you can use either PHP CLI or just casual wget for it e.g "0 */6 * * * wget -O /dev/null https://yourdomain.com/garbage/delete"
+1. Copy Garbage.php files inside your controllers path usually in **/projectPath/app/Controllers/**
+2. Edit **$pass** inside it with your own token
+3. Create cronjob to run the script, you can use either PHP CLI or just casual wget for it e.g **"0 */6 * * * wget -O /dev/null https://yourdomain.com/garbage/delete?token=YOUR_OWN_TOKEN"**
 
 # DONE!
-your expired session will be clean up every 6 hours
+your expired session will be deleted every 6 hours. 
+
+# TRIVIA
+Stop bullying the garbage collector, maybe the payment is just not good enough!
